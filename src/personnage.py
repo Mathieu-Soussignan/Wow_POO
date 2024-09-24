@@ -35,11 +35,14 @@ class Personnage:
         
     def afficher(self):
         # Détermination des articles et pronoms en fonction du sexe
-        pronom = "La" if self.sexe == "féminin" else "Le"
-        pronom_possessif = "elle" if self.sexe == "féminin" else "il"
+        pronom = "La" if self.sexe.lower() == "féminin" else "Le"
+        pronom_possessif = "elle" if self.sexe.lower() == "féminin" else "il"
+
         article_faction = "l'" if self.faction == "Alliance" else "la "
 
         nom_classe = self.__class__.__name__.lower()
+        if self.__class__.__name__ == "Magicien" and self.sexe.lower() == "féminin":
+            nom_classe = "magicienne"
         # Construction de la phrase
         return (f"{pronom} {nom_classe} s'appelle {self.nom}, {pronom_possessif} est de sexe {self.sexe}, "
                 f"{pronom_possessif} appartient à la faction de {article_faction}{self.faction}, "
