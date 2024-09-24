@@ -1,5 +1,18 @@
 # Projet World of Warcraft en Programmation Orientée Objet (POO)
 
+## Table des matières
+
+1. [Introduction](#introduction)
+2. [Concepts clés de la POO utilisés dans ce projet](#concepts-clés-de-la-poo-utilisés-dans-ce-projet)
+3. [Structure du projet](#structure-du-projet)
+4. [Explication détaillée](#explication-détaillée)
+   - [La classe de base : Personnage](#la-classe-de-base--personnage)
+   - [Les classes spécifiques : Guerrier, Magicien, Chasseur, Druide](#les-classes-spécifiques--guerrier-magicien-chasseur-druide)
+   - [Gestion du sexe et de la faction](#gestion-du-sexe-et-de-la-faction)
+   - [Polymorphisme](#polymorphisme)
+   - [Utilisation des classes](#utilisation-des-classes)
+5. [Conclusion](#conclusion)
+
 ## Introduction
 
 Ce projet est une simulation simplifiée de personnages inspirés du jeu World of Warcraft, réalisée en utilisant les principes de la Programmation Orientée Objet (POO) en Python. L’objectif est de comprendre les concepts fondamentaux de la POO à travers un exemple concret et amusant.
