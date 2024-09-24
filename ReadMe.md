@@ -25,7 +25,7 @@ Ce projet est une simulation simplifiée de personnages inspirés du jeu World o
 	4.	**Méthodes** : Comportements des objets.
 	5.	**Héritage** : Création de nouvelles classes basées sur des classes existantes.
 	6.	**Polymorphisme** : Capacité des objets de différentes classes à répondre à la même méthode de manière différente.
-	7.  **Encapsulation** : Regroupement des données et des comportements dans une même entité (la classe).
+	7.	**Encapsulation** : Regroupement des données et des comportements dans une même entité (la classe).
 
 ## Structure du projet
 
