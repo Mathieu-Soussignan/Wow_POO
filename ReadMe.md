@@ -1,0 +1,68 @@
+# Projet World of Warcraft en Programmation Orientée Objet (POO)
+
+## Introduction
+
+Ce projet est une simulation simplifiée de personnages inspirés du jeu World of Warcraft, réalisée en utilisant les principes de la Programmation Orientée Objet (POO) en Python. L’objectif est de comprendre les concepts fondamentaux de la POO à travers un exemple concret et amusant.
+
+## Concepts clés de la POO utilisés dans ce projet
+
+	1.	**Classes** : Modèles pour créer des objets.
+	2.	**Objets** : Instances concrètes de classes.
+	3.	**Attributs** : Caractéristiques des objets.
+	4.	**Méthodes** : Comportements des objets.
+	5.	**Héritage** : Création de nouvelles classes basées sur des classes existantes.
+	6.	**Polymorphisme** : Capacité des objets de différentes classes à répondre à la même méthode de manière différente.
+	7.  **Encapsulation** : Regroupement des données et des comportements dans une même entité (la classe).
+
+## Structure du projet
+
+Le projet est composé de plusieurs fichiers Python, chacun ayant un rôle spécifique :
+
+1. `personnage.py` : Contient la classe de base `Personnage`.
+2. `guerrier.py` : Définit la classe `Guerrier`.
+3. `magicien.py` : Définit la classe `Magicien`.
+4. `chasseur.py` : Définit la classe `Chasseur`.
+5. `druide.py` : Définit la classe `Druide`.
+6. `main.py` : Script principal qui démontre l'utilisation des classes.
+
+## Explication détaillée
+
+### La classe de base : Personnage
+
+La classe `Personnage` sert de modèle pour tous les types de personnages. Elle définit les attributs et méthodes communs à tous les personnages :
+
+- Attributs : nom, sexe, faction, niveau, points_de_vie, arme
+- Méthodes :
+- afficher() : Méthode qui adapte la description du personnage en fonction de son sexe et de sa faction (ex. “Le magicien” ou “La magicienne”, “la Horde” ou “l’Alliance”).
+- attaquer() : Peut être redéfinie dans les sous-classes pour refléter des attaques spécifiques.
+
+Cette classe utilise le concept d’encapsulation en regroupant les données (attributs) et les comportements (méthodes) liés à un personnage.
+
+### Les classes spécifiques : Guerrier, Magicien, Chasseur, Druide
+
+Ces classes **héritent** de la classe `Personnage`, ce qui signifie qu’elles obtiennent tous les attributs et méthodes de la classe de base. Elles ajoutent ensuite leurs propres attributs et méthodes spécifiques.
+
+Par exemple, la classe `Guerrier` ajoute :
+- Un attribut `rage`
+- Des méthodes `cri_de_guerre()` et `coup_heroique()`
+
+Ceci illustre le concept d’**extension** de classe par héritage.
+
+### Gestion du sexe et de la faction
+
+La méthode afficher() dans la classe Personnage a été adaptée pour prendre en compte le sexe du personnage et ajuster l’article et le nom de la classe en conséquence. Par exemple :
+
+- Pour un personnage de sexe féminin de la classe Magicien, la sortie sera “La magicienne” plutôt que “Le magicien”.
+- Les factions sont également gérées, en affichant “la Horde” ou “l’Alliance” selon le choix du personnage.
+
+### Polymorphisme
+
+Bien que toutes les classes héritent de Personnage, elles peuvent avoir des comportements différents pour les mêmes méthodes. Par exemple, la méthode attaquer() pourrait être redéfinie dans chaque classe pour refléter le style de combat unique de chaque type de personnage. C’est ce qu’on appelle le **polymorphisme**.
+
+### Utilisation des classes
+
+Dans le fichier main.py, nous créons des instances (objets) de chaque classe de personnage. Cela démontre comment les classes servent de “moules” pour créer des objets concrets.
+
+##Conclusion
+
+Ce projet illustre comment la POO permet de créer un code structuré, réutilisable et facile à comprendre. En modélisant les personnages comme des objets avec des attributs et des comportements, nous créons une représentation intuitive du monde du jeu.
