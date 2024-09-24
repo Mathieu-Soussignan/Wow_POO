@@ -31,6 +31,7 @@ def test_magicien_afficher_feminin():
     result = mage.afficher()
     assert "La magicienne s'appelle Jaina" in result
     assert "elle appartient à la faction de l'Alliance" in result
+    assert "elle a gagné 500 points d'expérience" in result
 
 def test_guerrier_attributs_specifiques():
     guerrier = Guerrier("Garrosh", "masculin", "Horde", 15, 120, "hache")
