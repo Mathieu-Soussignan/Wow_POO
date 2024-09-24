@@ -35,11 +35,9 @@ class Personnage:
         if self.__class__.__name__ == "Magicien" and self.sexe == "Féminin":
             nom_classe = "magicienne"
         elif self.__class__.__name__ == "Druide" and self.sexe == "Féminin":
-            nom_classe = "druide"
+            nom_classe = "druidesse"
         elif self.__class__.__name__ == "Guerrier" and self.sexe == "Féminin":
             nom_classe = "guerrière"
-        elif self.__class__.__name__ == "Chasseur" and self.sexe == "Féminin":
-            nom_classe = "chasseuse"
         elif self.__class__.__name__ == "Chasseur" and self.sexe == "Féminin":
             nom_classe = "chasseuse"
 
