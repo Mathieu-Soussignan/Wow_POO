@@ -5,8 +5,16 @@ class Personnage:
         self.faction = faction
         self.niveau = niveau
         self.points_de_vie = points_de_vie
-        self.arme = arme
+        self.__arme = arme
     
+    #accesseurs
+    @property
+    def arme(self):
+        return self.__arme
+    
+    #Mutateurs
+    def set_arme(self, arme):
+        self.__arme = arme
         
     def afficher(self):
         # Détermination des articles et pronoms en fonction du sexe
