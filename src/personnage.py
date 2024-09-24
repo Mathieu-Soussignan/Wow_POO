@@ -11,6 +11,13 @@ class Personnage:
     @property
     def experience(self):
         return self.__experience
+      
+    def arme(self):
+        return self.__arme
+    
+    #Mutateurs
+    def set_arme(self, arme):
+        self.__arme = arme
     
     def gagner_experience(self, points):
         if points > 0:
@@ -18,6 +25,7 @@ class Personnage:
             print(f"{self.nom} a gagné {points} points d'expérience.")
         else:
             print("Les points d'expérience doivent être positifs.")
+
         
     def afficher(self):
         # Détermination des articles et pronoms en fonction du sexe
@@ -33,6 +41,5 @@ class Personnage:
                 f"{pronom_possessif} a {self.points_de_vie} points de vie, "
                 f"et {pronom_possessif} manie un(e) {self.arme}, {pronom_possessif} a gagné {self.__experience} points d'expérience.")
 
-           
     def attaquer(self, cible):
         print(f"{self.nom} attaque {cible.nom} avec {self.arme}!")
