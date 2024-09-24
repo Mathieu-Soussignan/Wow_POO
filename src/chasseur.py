@@ -1,18 +1,16 @@
-class Chasseur:
-    def __init__(self, nom, sexe, faction, niveau, points_de_vie, armes):
-        self.nom = nom
-        self.sex = sexe
-        self.faction = faction
-        self.niveau = niveau
-        self.points_de_vie = points_de_vie
-        self.armes = armes
+from .personnage import Personnage
 
-    def afficher(self):
-        return (f"Le/La Chasseur(e) s'appelle {self.nom}, il/elle est de sexe {self.sexe},"
-                f"il/elle apparait à la faction {self.faction}, il/elle est de niveau {self.niveau},"
-                f"il/elle a {self.points_de_vie} points de vies, et il/elle manie un(e) {self.armes}.")
-          
+class Chasseur(Personnage):
+    def __init__(self, nom, sexe, faction, niveau, points_de_vie, arme):
+        super().__init__(nom, sexe, faction, niveau, points_de_vie, arme)
+        self.focus = 100
 
-#initialisation d'un chasseur 
-chasseur1 = Chasseur("Legolas", "Masculin", "Alliance", 9, 110, ["Arc", "Dagues"])
-print(chasseur1.afficher())
+    def tir_precis(self, cible):
+        if self.focus >= 25:
+            print(f"{self.nom} effectue un Tir Précis sur {cible.nom} !")
+            self.focus -= 25
+        else:
+            print(f"{self.nom} n'a pas assez de focus pour effectuer un Tir Précis.")
+
+    def appel_animal(self):
+        print(f"{self.nom} appelle un animal de compagnie !")
