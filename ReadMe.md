@@ -76,6 +76,6 @@ Bien que toutes les classes héritent de Personnage, elles peuvent avoir des com
 
 Dans le fichier main.py, nous créons des instances (objets) de chaque classe de personnage. Cela démontre comment les classes servent de “moules” pour créer des objets concrets.
 
-##Conclusion
+## Conclusion
 
 Ce projet illustre comment la POO permet de créer un code structuré, réutilisable et facile à comprendre. En modélisant les personnages comme des objets avec des attributs et des comportements, nous créons une représentation intuitive du monde du jeu.
