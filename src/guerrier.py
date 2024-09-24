@@ -15,3 +15,6 @@ class Guerrier(Personnage):
             self.rage -= 30
         else:
             print(f"{self.nom} n'a pas assez de rage pour utiliser Coup Héroïque.")
+
+
+

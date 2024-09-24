@@ -1,12 +1,18 @@
 class Personnage:
     def __init__(self, nom, sexe, faction, niveau, points_de_vie, arme):
-        self.nom = nom
+        self.__nom = nom
         self.sexe = sexe
         self.faction = faction
         self.niveau = niveau
         self.points_de_vie = points_de_vie
         self.arme = arme
     
+    @property
+    def nom(self):
+        return self.__nom
+       
+    def set_nom(self, nom):
+        self.__nom = nom
         
     def afficher(self):
         # Détermination des articles et pronoms en fonction du sexe
@@ -33,6 +39,8 @@ class Personnage:
                 f"{pronom_possessif} est de niveau {self.niveau}, "
                 f"{pronom_possessif} a {self.points_de_vie} points de vie, "
                 f"et {pronom_possessif} manie un(e) {self.arme}.")
-       
+    
     def attaquer(self, cible):
         print(f"{self.nom} attaque {cible.nom} avec {self.arme}!")
+
+    
