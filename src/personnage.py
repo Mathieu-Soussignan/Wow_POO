@@ -29,12 +29,25 @@ class Personnage:
         # Détermination des articles et pronoms en fonction du sexe
         pronom = "La" if self.sexe == "Féminin" else "Le"
         pronom_possessif = "elle" if self.sexe == "Féminin" else "il"
-    
+
+        # Adaptation du nom de la classe en fonction du sexe (ex. Magicien/Magicienne)
+        nom_classe = self.__class__.__name__.lower()
+        if self.__class__.__name__ == "Magicien" and self.sexe == "Féminin":
+            nom_classe = "magicienne"
+        elif self.__class__.__name__ == "Druide" and self.sexe == "Féminin":
+            nom_classe = "druide"
+        elif self.__class__.__name__ == "Guerrier" and self.sexe == "Féminin":
+            nom_classe = "guerrière"
+        elif self.__class__.__name__ == "Chasseur" and self.sexe == "Féminin":
+            nom_classe = "chasseuse"
+        elif self.__class__.__name__ == "Chasseur" and self.sexe == "Féminin":
+            nom_classe = "chasseuse"
+
         # Choisir l'article correct avant la faction
         article_faction = "l'" if self.faction == "Alliance" else "la "
     
         # Construction de la phrase
-        return (f"{pronom} {self.__class__.__name__} s'appelle {self.nom}, {pronom_possessif} est de sexe {self.sexe}, "
+        return (f"{pronom} {nom_classe} s'appelle {self.nom}, {pronom_possessif} est de sexe {self.sexe}, "
                 f"{pronom_possessif} appartient à la faction de {article_faction}{self.faction}, "
                 f"{pronom_possessif} est de niveau {self.niveau}, "
                 f"{pronom_possessif} a {self.points_de_vie} points de vie, "
