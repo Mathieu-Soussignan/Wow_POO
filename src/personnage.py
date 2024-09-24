@@ -5,13 +5,14 @@ class Personnage:
         self.faction = faction
         self.niveau = niveau
         self.points_de_vie = points_de_vie
-        self.arme = arme
+        self.__arme = arme
         self.__experience = 500
     
     @property
     def experience(self):
         return self.__experience
-      
+    
+    @property
     def arme(self):
         return self.__arme
     
