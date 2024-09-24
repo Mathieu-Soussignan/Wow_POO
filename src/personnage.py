@@ -27,18 +27,18 @@ class Personnage:
         
     def afficher(self):
         # Détermination des articles et pronoms en fonction du sexe
-        pronom = "La" if self.sexe == "Féminin" else "Le"
-        pronom_possessif = "elle" if self.sexe == "Féminin" else "il"
+        pronom = "La" if self.sexe == "féminin" else "Le"
+        pronom_possessif = "elle" if self.sexe == "féminin" else "il"
 
         # Adaptation du nom de la classe en fonction du sexe (ex. Magicien/Magicienne)
         nom_classe = self.__class__.__name__.lower()
-        if self.__class__.__name__ == "Magicien" and self.sexe == "Féminin":
+        if self.__class__.__name__ == "Magicien" and self.sexe == "féminin":
             nom_classe = "magicienne"
-        elif self.__class__.__name__ == "Druide" and self.sexe == "Féminin":
+        elif self.__class__.__name__ == "Druide" and self.sexe == "féminin":
             nom_classe = "druidesse"
-        elif self.__class__.__name__ == "Guerrier" and self.sexe == "Féminin":
+        elif self.__class__.__name__ == "Guerrier" and self.sexe == "féminin":
             nom_classe = "guerrière"
-        elif self.__class__.__name__ == "Chasseur" and self.sexe == "Féminin":
+        elif self.__class__.__name__ == "Chasseur" and self.sexe == "féminin":
             nom_classe = "chasseuse"
 
         # Choisir l'article correct avant la faction

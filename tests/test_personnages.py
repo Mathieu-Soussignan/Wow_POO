@@ -23,7 +23,7 @@ def test_personnage_creation():
 def test_personnage_afficher():
     perso = Personnage("Thrall", "masculin", "Horde", 10, 100, "épée")
     result = perso.afficher()
-    assert "Le Personnage s'appelle Thrall" in result
+    assert "Le personnage s'appelle Thrall" in result
     assert "il appartient à la faction la Horde" in result
 
 def test_magicien_afficher_feminin():
