@@ -52,7 +52,6 @@ class Personnage:
                 f"{pronom_possessif} est de niveau {self.niveau}, "
                 f"{pronom_possessif} a {self.points_de_vie} points de vie, "
                 f"et {pronom_possessif} manie un(e) {self.arme}.")
-
-           
+       
     def attaquer(self, cible):
         print(f"{self.nom} attaque {cible.nom} avec {self.arme}!")
