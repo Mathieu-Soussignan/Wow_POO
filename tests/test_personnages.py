@@ -24,13 +24,13 @@ def test_personnage_afficher():
     perso = Personnage("Thrall", "masculin", "Horde", 10, 100, "épée")
     result = perso.afficher()
     assert "Le personnage s'appelle Thrall" in result
-    assert "il appartient à la faction la Horde" in result
+    assert "il appartient à la faction de la Horde" in result
 
 def test_magicien_afficher_feminin():
     mage = Magicien("Jaina", "féminin", "Alliance", 20, 80, "bâton")
     result = mage.afficher()
     assert "La magicienne s'appelle Jaina" in result
-    assert "elle appartient à la faction l'Alliance" in result
+    assert "elle appartient à la faction de l'Alliance" in result
 
 def test_guerrier_attributs_specifiques():
     guerrier = Guerrier("Garrosh", "masculin", "Horde", 15, 120, "hache")
