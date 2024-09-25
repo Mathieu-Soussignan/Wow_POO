@@ -10,7 +10,7 @@
    - [Les classes spécifiques : Guerrier, Magicien, Chasseur, Druide](#les-classes-spécifiques--guerrier-magicien-chasseur-druide)
    - [Gestion du sexe et de la faction](#gestion-du-sexe-et-de-la-faction)
    - [Polymorphisme](#polymorphisme)
-   - [Combat et continué](#combat-et-continué)
+   - [Combat et continuité](#combat-et-continué)
    - [Transformation du Druide](#transformation-du-druide)
    - [Utilisation des classes](#utilisation-des-classes)
 5. [Conclusion](#conclusion)
@@ -54,7 +54,7 @@ La classe `Personnage` sert de modèle pour tous les types de personnages. Elle 
 
 Cette classe utilise le concept d’encapsulation en regroupant les données (attributs) et les comportements (méthodes) liés à un personnage.
 
-### Les classes spécifiques : Guerrier, Magicien, Chasseur, Druide
+### Les classes spécifiques : Guerrier, Magicien, Chasseur, Druide, Voleur
 
 Ces classes **héritent** de la classe `Personnage`, ce qui signifie qu’elles obtiennent tous les attributs et méthodes de la classe de base. Elles ajoutent ensuite leurs propres attributs et méthodes spécifiques.
 
