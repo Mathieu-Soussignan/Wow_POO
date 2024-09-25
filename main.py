@@ -88,7 +88,11 @@ def combat():
     while True:
         personnage = choisir_personnage()
         attaque = choisir_attaque(personnage)
-        print(f"\n{personnage.nom} se transforme en {attaque} !")
+        
+        if isinstance(personnage, Druide) and attaque in transformations_druide:
+            print(f"\n{personnage.nom} s'est transformé en {attaque} !")
+        else:
+            print(f"\n{personnage.nom} lance l'attaque {attaque} !")
         
         continuer = input("\nSouhaitez-vous continuer le combat ? (o/n) : ")
         if continuer.lower() != 'o':
