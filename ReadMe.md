@@ -10,6 +10,8 @@
    - [Les classes spécifiques : Guerrier, Magicien, Chasseur, Druide](#les-classes-spécifiques--guerrier-magicien-chasseur-druide)
    - [Gestion du sexe et de la faction](#gestion-du-sexe-et-de-la-faction)
    - [Polymorphisme](#polymorphisme)
+   - [Combat et continué](#combat-et-continué)
+   - [Transformation du Druide](#transformation-du-druide)
    - [Utilisation des classes](#utilisation-des-classes)
 5. [Conclusion](#conclusion)
 
@@ -36,7 +38,8 @@ Le projet est composé de plusieurs fichiers Python, chacun ayant un rôle spéc
 3. `magicien.py` : Définit la classe `Magicien`.
 4. `chasseur.py` : Définit la classe `Chasseur`.
 5. `druide.py` : Définit la classe `Druide`.
-6. `main.py` : Script principal qui démontre l'utilisation des classes.
+6. `voleur.py` : Définit la classe `Voleur`.
+7. `main.py` : Script principal qui démontre l'utilisation des classes.
 
 ## Explication détaillée
 
@@ -71,6 +74,14 @@ La méthode afficher() dans la classe Personnage a été adaptée pour prendre e
 ### Polymorphisme
 
 Bien que toutes les classes héritent de Personnage, elles peuvent avoir des comportements différents pour les mêmes méthodes. Par exemple, la méthode attaquer() pourrait être redéfinie dans chaque classe pour refléter le style de combat unique de chaque type de personnage. C’est ce qu’on appelle le **polymorphisme**.
+
+### Combat et continué
+
+Le système de combat permet à l’utilisateur de choisir le personnage qui entre en combat et d’effectuer une attaque. Après chaque attaque, l’utilisateur a la possibilité de continuer le combat jusqu’à ce que l’un des personnages soit à court de points de vie. En cas de mauvaise saisie (par exemple, un mauvais choix de personnage ou d’attaque), une erreur est affichée et l’utilisateur est invité à refaire un choix valide.
+
+### Transformation du Druide
+
+Lorsque le Druide entre en combat, il a la possibilité de se métamorphoser en différentes formes. L’utilisateur peut choisir parmi plusieurs transformations : forme d’ours, de chat ou de chouette, chacune ayant des effets et des attaques spécifiques.
 
 ### Utilisation des classes
 
