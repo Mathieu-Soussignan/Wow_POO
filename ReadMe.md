@@ -81,11 +81,12 @@ Le système de combat permet à l’utilisateur de choisir le personnage qui ent
 
 ### Transformation du Druide
 
-Lorsque le Druide entre en combat, il a la possibilité de se métamorphoser en différentes formes. L’utilisateur peut choisir parmi plusieurs transformations : forme d’ours, de chat ou de chouette, chacune ayant des effets et des attaques spécifiques.
+Lorsque le Druide entre en combat, il a la possibilité de se métamorphoser en différentes formes. L’utilisateur peut choisir parmi plusieurs transformations : forme d’ours, de chat, de corbeau et d’arbre, chacune ayant des effets et des attaques spécifiques.
 
 ### Utilisation des classes
 
 Dans le fichier main.py, nous créons des instances (objets) de chaque classe de personnage. Cela démontre comment les classes servent de “moules” pour créer des objets concrets.
+Nous avons également utilisé des listes pour stocker les personnages et les attaques disponibles, ce qui permet une gestion plus facile des données.
 
 ## Conclusion
 
