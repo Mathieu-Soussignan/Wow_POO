@@ -10,7 +10,7 @@
    - [Les classes spécifiques : Guerrier, Magicien, Chasseur, Druide](#les-classes-spécifiques--guerrier-magicien-chasseur-druide)
    - [Gestion du sexe et de la faction](#gestion-du-sexe-et-de-la-faction)
    - [Polymorphisme](#polymorphisme)
-   - [Combat et continuité](#combat-et-continué)
+   - [Combat et continuité](#combat-et-continuité)
    - [Transformation du Druide](#transformation-du-druide)
    - [Utilisation des classes](#utilisation-des-classes)
 5. [Conclusion](#conclusion)
