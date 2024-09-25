@@ -10,7 +10,7 @@
    - [Les classes spécifiques : Guerrier, Magicien, Chasseur, Druide](#les-classes-spécifiques--guerrier-magicien-chasseur-druide)
    - [Gestion du sexe et de la faction](#gestion-du-sexe-et-de-la-faction)
    - [Polymorphisme](#polymorphisme)
-   - [Combat et continué](#combat-et-continué)
+   - [Combat et continuité](#combat-et-continuité)
    - [Transformation du Druide](#transformation-du-druide)
    - [Utilisation des classes](#utilisation-des-classes)
 5. [Conclusion](#conclusion)
@@ -54,7 +54,7 @@ La classe `Personnage` sert de modèle pour tous les types de personnages. Elle 
 
 Cette classe utilise le concept d’encapsulation en regroupant les données (attributs) et les comportements (méthodes) liés à un personnage.
 
-### Les classes spécifiques : Guerrier, Magicien, Chasseur, Druide
+### Les classes spécifiques : Guerrier, Magicien, Chasseur, Druide, Voleur
 
 Ces classes **héritent** de la classe `Personnage`, ce qui signifie qu’elles obtiennent tous les attributs et méthodes de la classe de base. Elles ajoutent ensuite leurs propres attributs et méthodes spécifiques.
 
@@ -75,7 +75,7 @@ La méthode afficher() dans la classe Personnage a été adaptée pour prendre e
 
 Bien que toutes les classes héritent de Personnage, elles peuvent avoir des comportements différents pour les mêmes méthodes. Par exemple, la méthode attaquer() pourrait être redéfinie dans chaque classe pour refléter le style de combat unique de chaque type de personnage. C’est ce qu’on appelle le **polymorphisme**.
 
-### Combat et continué
+### Combat et continuité
 
 Le système de combat permet à l’utilisateur de choisir le personnage qui entre en combat et d’effectuer une attaque. Après chaque attaque, l’utilisateur a la possibilité de continuer le combat jusqu’à ce que l’un des personnages soit à court de points de vie. En cas de mauvaise saisie (par exemple, un mauvais choix de personnage ou d’attaque), une erreur est affichée et l’utilisateur est invité à refaire un choix valide.
 
