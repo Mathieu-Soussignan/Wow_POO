@@ -6,7 +6,7 @@ class Druide(Personnage):
         self.forme = "Humaine"
 
     def metamorphose(self, nouvelle_forme):
-        print(f"{self.nom} se transforme en forme {nouvelle_forme} !")
+        print(f"{self.nom} se transforme en forme {nouvelle_forme}!")
         self.forme = nouvelle_forme
 
     def soin(self, cible):
