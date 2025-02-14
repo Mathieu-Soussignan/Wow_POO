@@ -1,6 +1,6 @@
 # Projet World of Warcraft en Programmation Orientée Objet (POO)
 
-## Table des matières
+## Table des matières qui est géniale
 
 1. [Introduction](#introduction)
 2. [Concepts clés de la POO utilisés dans ce projet](#concepts-clés-de-la-poo-utilisés-dans-ce-projet)
